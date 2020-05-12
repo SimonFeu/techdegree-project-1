@@ -41,7 +41,12 @@ let quotes = [
   }
 ];
 
-console.log(quotes);
+getRandomQuote = () => {
+  let randomNum = Math.floor(Math.random() * quotes.length);
+  console.log(quotes[randomNum]);
+  return quotes[randomNum];
+};
+getRandomQuote();
 
 /***
  * `getRandomQuote` function
