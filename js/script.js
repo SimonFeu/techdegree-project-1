@@ -41,20 +41,32 @@ let quotes = [
   }
 ];
 
-getRandomQuote = () => {
-  let randomNum = Math.floor(Math.random() * quotes.length);
-  console.log(quotes[randomNum]);
-  return quotes[randomNum];
-};
-getRandomQuote();
-
 /***
  * `getRandomQuote` function
  ***/
 
+getRandomQuote = () => {
+  let randomNum = Math.floor(Math.random() * quotes.length);
+  return quotes[randomNum];
+};
+
 /***
  * `printQuote` function
  ***/
+
+printQuote = () => {
+  let quoteObj = getRandomQuote();
+  let html = `<p class="quote">${quoteObj.quote}</p>`;
+  html += `<p class="source">${quoteObj.source}`;
+  if (quoteObj.citation != null) {
+    html += `<span class="citation">${quoteObj.citation}</span>`;
+  }
+  if (quoteObj.year != null) {
+    html += `<span class="year">${quoteObj.year}</span>`;
+  }
+  html += `</p>`;
+  document.getElementById("quote-box").innerHTML = html;
+};
 
 /***
  * click event listener for the print quote button
