@@ -4,8 +4,9 @@ project 1 - A Random Quote Generator
 ******************************************/
 
 /***
- * Array of 'quotes'
- * The array contains the properties quote and source (optional there are properties like citation and year)
+ * Declaration of the array of 'quotes'
+ * It contains at least the properties of "quotes" and "source".
+ * If "citation" and "year" are also available for the quote, these properties are also included.
  ***/
 let quotes = [
   {
