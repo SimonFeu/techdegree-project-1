@@ -41,7 +41,7 @@ let quotes = [
 
 /***
  * Declaration of the `getRandomQuote` function.
- * randomNum stores a randum Number from 0 to maixmal index value.
+ * randomNum stores a random Number from 0 to maixmal index value.
  * radomNum is used as index to access and return a random object out of the array quotes.
  ***/
 
@@ -52,7 +52,7 @@ getRandomQuote = () => {
 
 /***
  * Declaration of the `printQuote` function
- * First the random object is storde in a variable named 'quoteObj'.
+ * First the random object is stored in a variable named 'quoteObj'.
  * Then a html-string gets created. The html-sting contains at least the quote and the source.
  * If the random object contains the properties 'citation' and 'year', then these values are also part of the string.
  * At the end the html string is inserted into the div-tag with the class 'quote-box'.
