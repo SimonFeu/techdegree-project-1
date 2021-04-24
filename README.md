@@ -1,5 +1,5 @@
-# techdegree-project-1
-### A Random Quote Generator
+# A Random Quote Generator
+## Techdegree Project 1
 
 Live Version:  https://simonfeu.github.io/techdegree-project-1/
 
